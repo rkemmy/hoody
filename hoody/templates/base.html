@@ -13,7 +13,7 @@
 
   {% block styles %}
     {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'hoody/css/index.css' %}">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
@@ -21,10 +21,14 @@
   {% endblock %}
 </head>
 <body>
-    
-    {% block content%}
+    {% include "navbar.html" %}
 
-    {% endblock %}
+    <div class="container mycontent">
+      {% block content%}
+
+      {% endblock %}
+
+    </div>
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
