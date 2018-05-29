@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block styles %}
+    {% bootstrap_css%}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the neighbourhood watch!</h1>
+
+    <div class="wrapper">
+        <a href="{% url "home" %}" class="btn btn-outline-light btn-lg">View More</a>
+
+    </div>
+
+{% endblock %}
