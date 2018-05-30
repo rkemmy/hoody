@@ -1,0 +1,9 @@
+{% extends "posts/post_base.html" %}
+{% load bootstrap4%}
+{% load static%}
+
+{% block post_content%}
+<div class="col-md-6">
+  {% include "posts/_post.html" %}
+</div>
+{% endblock %}
