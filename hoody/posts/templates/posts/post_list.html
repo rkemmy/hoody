@@ -1,0 +1,24 @@
+{% extends "posts/post_base.html" %} {% block pre_post_content %} {% if request.user.is_authenticated %}
+<div class="col-md-6">
+  <div class="card">
+    <div class="content">
+      <h5>Your Hoods</h5> {% for member_hood in ger_user_hoods %}
+      <a href="{% url 'hoods:single' slug=member_hood.hood.slug %}"></a> {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+  <div class="card">
+    <div class="content">
+      <h5>All Hoods</h5> {% for other_hood in get_other_hoods %}
+      <a href="{% url 'hoods:single' slug=other_hood.slug %}"></a> {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block post_content %}
+<div class="col-md-6">
+  {% for business in business_list %} {% include "posts/_post.html" %} {% endfor %}
+
+</div>
+
+{% endblock %}
