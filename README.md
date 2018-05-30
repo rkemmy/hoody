@@ -17,18 +17,18 @@ The user can  create a hood, create and delete a business and join or leave a ho
 Working to fix that. Recommendations are welcome
 
 ## Technologies used
-astroid==1.6.4
-Django==1.11.5
-django-bootstrap4==0.0.6
-django-braces==1.13.0
-isort==4.3.4
-lazy-object-proxy==1.3.1
-mccabe==0.6.1
-pkg-resources==0.0.0
-pylint==1.9.1
-pytz==2018.4
-six==1.11.0
-wrapt==1.10.11
+-astroid==1.6.4
+-Django==1.11.5
+-django-bootstrap4==0.0.6
+-django-braces==1.13.0
+-isort==4.3.4
+-lazy-object-proxy==1.3.1
+-mccabe==0.6.1
+-pkg-resources==0.0.0
+-pylint==1.9.1
+-pytz==2018.4
+-six==1.11.0
+-wrapt==1.10.11
 ## Support and contact details
  - Email Address: rkemmy.rk69@gmail.com
 
