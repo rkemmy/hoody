@@ -13,3 +13,7 @@ class CreateHood(LoginRequiredMixin, generic.CreateView):
     model = Hood
 
 
+class SingleHood(generic.DetailView):
+    model = Hood
+
+
