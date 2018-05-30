@@ -1,0 +1,23 @@
+{% extends "hoods/hood_base.html" %} {% load bootstrap4 %} 
+{% block hood_content %}
+<div class="container ">
+  <div class="row" >
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <div class="card" style=" margin-top: 22%">
+        <h5 class="card-header text-center">Create New Hood</h5>
+        <div class="card-body">
+          <form action="{% url 'hoods:create'%}" method="post">
+            {% csrf_token %} {% bootstrap_form form %}
+            <input type="submit" class="btn btn-success" value="Create">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
+  {% endblock %}
