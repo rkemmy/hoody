@@ -6,7 +6,7 @@ Developer: Risper Kemunto
 This is a Django web app that allows the user to become part of a community. the user can  create a hood, create a business and join a hood.
 
 ## Specifications
-It has an administration dashboard that allows the admin to post new pics, edit them and delete existing pics.
+The user can  create a hood, create and delete a business and join or leave a hood.
 
 ## Setup/Installation Requirements
 -Internet connection
